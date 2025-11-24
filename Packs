@@ -1,3 +1,4 @@
+
 local Players = game:GetService("Players")
 local HttpService = game:GetService("HttpService")
 
@@ -15,7 +16,8 @@ local rebirthsStat = leaderstats:WaitForChild("Rebirths")
 
 local title = (" Shi Farming| Welcome %s"):format(displayName)
 
-local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/CoronaBlanca/Lxbrxrys/refs/heads/main/Xlxrxxm"))()
+local library = 
+loadstring(game:HttpGet("https://raw.githubusercontent.com/CoronaBlanca/Lxbrxrys/refs/heads/main/Xlxrxxm"))()
 
 local window = library:AddWindow(title, {
     main_color = Color3.fromRGB(80, 0, 130),
