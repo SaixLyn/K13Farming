@@ -811,6 +811,24 @@ end)
 local infoTab = window:AddTab("Info")
 infoTab:Show()
 infoTab:AddLabel("Made by Shi ♥️").TextSize = 20
+infoTab:AddLabel("Facebook.com/Shi").TextSize = 20
+infoTab:AddButton("Copy Invite", function()
+    local link = "https://www.facebook.com/share/17k7N2Znyq/"
+    if setclipboard then
+        setclipboard(link)
+        game.StarterGui:SetCore("SendNotification", {
+            Title = "Link Copied!";
+            Text = "You can message me in facebook now.";
+            Duration = 3;
+        })
+    else
+        game.StarterGui:SetCore("SendNotification", {
+            Title = "Error!";
+            Text = "Not Supported.";
+            Duration = 3;
+        })
+    end
+end)
 infoTab:AddLabel("Facebook | Sai Espinoza")
 infoTab:AddLabel("Tiktok | k13s_1")
 infoTab:AddLabel("Roblox | DarkPhantoM_Prince")                     
