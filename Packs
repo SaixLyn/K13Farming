@@ -11,8 +11,7 @@ local leaderstats = player:WaitForChild("leaderstats")
 local rebirthsStat = leaderstats:WaitForChild("Rebirths")
 
 local displayName = LocalPlayer.DisplayName
-local library = 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/CoronaBlanca/Lxbrxrys/refs/heads/main/Xlxrxxm"))()
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/lkjhg969/ffdsf/refs/heads/main/hgfhj", true))()
 
 local window = library:AddWindow(Shi Farming | [" .. displayName .. "]", {
     main_color = Color3.fromRGB(80, 0, 130),
