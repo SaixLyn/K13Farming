@@ -811,6 +811,24 @@ end)
 local infoTab = window:AddTab("Info")
 infoTab:Show()
 infoTab:AddLabel("Made by Shi").TextSize = 20
+infoTab:AddLabel("discord.gg/silencev1").TextSize = 20
+infoTab:AddButton("Copy Invite", function()
+    local link = "https://discord.gg/9eFf93Kg8D"
+    if setclipboard then
+        setclipboard(link)
+        game.StarterGui:SetCore("SendNotification", {
+            Title = "Link Copied!";
+            Text = "You can continue to Discord now.";
+            Duration = 3;
+        })
+    else
+        game.StarterGui:SetCore("SendNotification", {
+            Title = "Error!";
+            Text = "Not Supported.";
+            Duration = 3;
+        })
+    end
+end)
 local infoTab = window:AddTab("Info")
 infoTab:AddLabel("Made by Shi ♥️").TextSize = 20
 infoTab:AddLabel("Facebook | Sai Espinoza")
